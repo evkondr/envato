@@ -29,6 +29,12 @@
     font-style: normal; 
     font-weight: normal; 
 }
+@font-face {
+    font-family: "RobotoBlack"; 
+    src: url("../fonts/Roboto/Roboto-Black.ttf") format("truetype"); 
+    font-style: bold; 
+    font-weight: bold; 
+}
 /*RobotoSlab*/
 @font-face {
     font-family: "RobotoSlabRegular"; 
