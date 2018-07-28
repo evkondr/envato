@@ -1,5 +1,44 @@
+/*Roboto*/
 @font-face {
-  font-family: 'Glyphicons Halflings';
-  src: url('../fonts/glyphicons-halflings-regular.eot');
-  src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff2') format('woff2'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+    font-family: "RobotoRegular"; 
+    src: url("../fonts/Roboto/Roboto-Regular.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+}
+@font-face {
+    font-family: "RobotoBold"; 
+    src: url("../fonts/Roboto/Roboto-Bold.ttf") format("truetype"); 
+    font-style: bold; 
+    font-weight: bold; 
+}
+@font-face {
+    font-family: "RobotoThin"; 
+    src: url("../fonts/Roboto/Roboto-Thin.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal;
+}
+@font-face {
+    font-family: "RobotoLight"; 
+    src: url("../fonts/Roboto/Roboto-Light.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+}
+@font-face {
+    font-family: "RobotoLight"; 
+    src: url("../fonts/Roboto/Roboto-Light.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+}
+/*RobotoSlab*/
+@font-face {
+    font-family: "RobotoSlabRegular"; 
+    src: url("../fonts/Roboto/RobotoSlab-Regular.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+}
+@font-face {
+    font-family: "RobotoSlabThin"; 
+    src: url("../fonts/Roboto/RobotoSlab-Thin.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
 }
