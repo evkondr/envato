@@ -1,0 +1,36 @@
+@media screen and (max-width: 992px){
+    .active{
+        height: auto !important;
+    }
+    .nav{
+        
+        .menu{
+            position: relative;
+            float: none;
+            width: 100%;
+            padding: 10px 0;
+            position: relative;
+            overflow: visible;
+            .burger{
+                float: none;
+                margin: 0px auto;
+            }
+            .items{
+                position: absolute;
+                top: 100%;
+                width: 100%;
+                display: block !important;  
+                background: #4a454b;
+                margin: 0;
+                text-align: center;
+                height: 0;
+                transition: height .2s;
+                li{
+                    float: none;
+                    padding: 10px;
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
