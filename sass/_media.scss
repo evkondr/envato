@@ -1,9 +1,8 @@
 @media screen and (max-width: 992px){
     .active{
-        height: auto !important;
+        display: block !important;
     }
     .nav{
-        
         .menu{
             position: relative;
             float: none;
@@ -11,6 +10,7 @@
             padding: 10px 0;
             position: relative;
             overflow: visible;
+            
             .burger{
                 float: none;
                 margin: 0px auto;
@@ -19,12 +19,12 @@
                 position: absolute;
                 top: 100%;
                 width: 100%;
-                display: block !important;  
+                display: none;
                 background: #4a454b;
                 margin: 0;
                 text-align: center;
-                height: 0;
                 transition: height .2s;
+                z-index: 1000;
                 li{
                     float: none;
                     padding: 10px;

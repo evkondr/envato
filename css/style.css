@@ -1,3 +1,7 @@
+* {
+  padding: 0;
+  margin: 0; }
+
 ul {
   list-style-type: none;
   padding: 0; }
@@ -16,10 +20,12 @@ body {
   font: 14px RobotoLight, sans-serif;
   background-color: #fff; }
 
+.nav, .header {
+  background: #4a454b;
+  width: 100%; }
+
 .nav {
-  padding-top: 40px;
-  width: 100%;
-  background: #4a454b; }
+  padding-top: 40px; }
   .nav .logo {
     width: 230px;
     height: 62px;
@@ -47,9 +53,47 @@ body {
       .nav .menu .items li a:hover {
         color: white; }
 
+.header {
+  position: relative; }
+  .header .skew {
+    background: url(../img/bg.png) no-repeat 100px -100px;
+    height: 120px;
+    width: 100%;
+    position: relative; }
+  .header .skew > div {
+    width: 100%;
+    background: #fff;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    height: 120px;
+    transform: skewY(-5deg); }
+  .header .timer {
+    text-align: center;
+    color: #fff;
+    width: 100%;
+    margin: 118px 0 230px 0;
+    padding-bottom: 20px;
+    -webkit-border-radius: 20px 20px 20px 20px;
+    -moz-border-radius: 20px 20px 20px 20px;
+    -ms-border-radius: 20px 20px 20px 20px;
+    -o-border-radius: 20px 20px 20px 20px;
+    border-radius: 20px 20px 20px 20px;
+    border: 2px solid #90d23d; }
+  .header .timer > div, .header .timer > p {
+    display: inline-block;
+    font: 130px RobotoSlabThin, sans-serif; }
+  .header .timer > p {
+    vertical-align: top;
+    margin: 0 3%; }
+  .header .timer > div > span {
+    font: 25px RobotoSlabRegular, sans-serif;
+    text-transform: uppercase;
+    display: block; }
+
 @media screen and (max-width: 992px) {
   .active {
-    height: auto !important; }
+    display: block !important; }
 
   .nav .menu {
     position: relative;
@@ -65,12 +109,12 @@ body {
       position: absolute;
       top: 100%;
       width: 100%;
-      display: block !important;
+      display: none;
       background: #4a454b;
       margin: 0;
       text-align: center;
-      height: 0;
-      transition: height .2s; }
+      transition: height .2s;
+      z-index: 1000; }
       .nav .menu .items li {
         float: none;
         padding: 10px;

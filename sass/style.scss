@@ -8,8 +8,18 @@ $body_font: 14px RobotoLight, sans-serif;
 $btn_font: 22px RobotoRegular, sans-serif;
 $header_font: 50px RobotoBlack, sans-serif;
 
+@mixin border-radius($a,$b,$c,$d){
+    -webkit-border-radius: $a $b $c $d;
+    -moz-border-radius: $a $b $c $d;
+    -ms-border-radius: $a $b $c $d;
+    -o-border-radius: $a $b $c $d;
+    border-radius: $a $b $c $d;
+}
 
-
+*{
+    padding: 0;
+    margin: 0; 
+}
 ul{
     list-style-type: none;
     padding: 0;
@@ -30,10 +40,12 @@ body{
     font: $body_font;
     background-color: #fff;
 }
+.nav,.header{
+    background: #4a454b;
+    width: 100%;
+}
 .nav{
     padding-top: 40px;
-    width: 100%;
-    background: #4a454b;
     .logo{
         width: 230px;
         height: 62px;
@@ -68,6 +80,47 @@ body{
                 }
             }
         }
+    }
+}
+.header{
+    position: relative;
+    .skew{
+        background: url(../img/bg.png) no-repeat 100px -100px;
+        height: 120px;
+        width: 100%;
+        position: relative;
+    }
+    .skew>div{
+        width: 100%;
+        background: #fff;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        height: 120px;
+        transform: skewY(-5deg);
+    }
+    .timer{
+        text-align: center;
+        color: #fff;
+        width: 100%;
+        margin: 118px 0 230px 0;
+        padding-bottom: 20px;
+        @include border-radius(20px, 20px, 20px, 20px);
+        border: 2px solid $seconf_color;
+    }
+    
+    .timer>div,.timer>p{
+        display: inline-block;
+        font: 130px RobotoSlabThin, sans-serif;
+    }
+    .timer>p{
+        vertical-align: top;
+        margin: 0 3%;
+    }
+    .timer>div>span{
+        font: 25px RobotoSlabRegular, sans-serif;
+        text-transform: uppercase;
+        display: block;
     }
 }
 

@@ -38,13 +38,13 @@
 /*RobotoSlab*/
 @font-face {
     font-family: "RobotoSlabRegular"; 
-    src: url("../fonts/Roboto/RobotoSlab-Regular.ttf") format("truetype"); 
+    src: url("../fonts/Roboto_slab/RobotoSlab-Regular.ttf") format("truetype"); 
     font-style: normal; 
     font-weight: normal; 
 }
 @font-face {
     font-family: "RobotoSlabThin"; 
-    src: url("../fonts/Roboto/RobotoSlab-Thin.ttf") format("truetype"); 
+    src: url("../fonts/Roboto_slab/RobotoSlab-Thin.ttf") format("truetype"); 
     font-style: normal; 
     font-weight: normal; 
 }
