@@ -3,6 +3,7 @@
 $first_color: #4b4d4f;
 $seconf_color: #90d23d;
 $third_color: #373737;
+$h_color: #242424;
 
 $body_font: 14px RobotoLight, sans-serif;
 $btn_font: 22px RobotoRegular, sans-serif;
@@ -39,10 +40,9 @@ a{
 }
 body{
     font: $body_font;
-    background-color: #fff;
+    background-color: #4a454b;
 }
 .nav,.header{
-    background: #4a454b;
     width: 100%;
 }
 .nav{
@@ -87,17 +87,18 @@ body{
 }
 .header{
     position: relative;
-    overflow: hidden;
+    .container{
+        background: url(../img/bg.png) no-repeat 10px bottom;
+    }
     .timer{
         text-align: center;
         color: #fff;
         width: 100%;
-        margin: 118px 0 230px 0;
+        margin: 118px 0 350px 0;
         padding-bottom: 20px;
         @include border-radius(20px, 20px, 20px, 20px);
         border: 2px solid $seconf_color;
     }
-    
     .timer>div,.timer>p{
         display: inline-block;
         font: 130px RobotoSlabThin, sans-serif;
@@ -111,26 +112,21 @@ body{
         text-transform: uppercase;
         display: block;
     }
-    .skew{
-        overflow: hidden;
-        position: relative;
+
+}
+.section{
+    margin-top: -95px;
+    background: #fff;
+    width: 100%;
+    transform: skewY(-3deg);
+    .container{
+        transform: skewY(3deg);
     }
-    .skew,.skew>div{
-        width: 100%;
-        height: 120px; 
-    }
-    .skew>div{
-        position: absolute;
-        top: 60px;
-        background: #fff;
-        transform: skewY(-5deg);
-    }
-    .heroes{
-        position: absolute;
-        bottom: -40px;
-        margin-left: 20px;
+    h3{
+        font: $header_font;
+        color: #242424;
+        margin-top: 70px;
     }
 }
-
 
 @import "media";
