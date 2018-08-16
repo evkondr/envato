@@ -16,7 +16,13 @@ $header_font: 50px RobotoBlack, sans-serif;
     -o-border-radius: $a $b $c $d;
     border-radius: $a $b $c $d;
 }
-
+@mixin transform($value){
+    -webkit-transform: $value;
+    -moz-transform: $value;
+    -ms-transform: $value;
+    -o-transform: $value;
+    transform: $value;
+}
 *{
     padding: 0;
     margin: 0; 
@@ -118,14 +124,41 @@ body{
     margin-top: -95px;
     background: #fff;
     width: 100%;
-    transform: skewY(-3deg);
+    @include transform(skewY(-3deg));
     .container{
-        transform: skewY(3deg);
+        @include transform(skewY(3deg));
+        padding-top: 70px; 
     }
     h3{
         font: $header_font;
         color: #242424;
-        margin-top: 70px;
+    }
+    p,h3{
+        margin-bottom: 20px;
+    }
+    .sigup-block{
+        width: 100%;
+        position: relative;
+        text-align: center;
+        .singup-form{
+            margin-top: -270px;
+            width: 100%;
+            padding: 30px;
+            border: 1px solid #dbdada;
+            background: #fff;
+            h3{
+                font: 30px RobotoBold, sans-serif;
+            }
+            input{
+                width: 100%;
+                height: 55px;
+                border: 1px solid #bebebe;
+                line-height: 55px;
+                font: 19px RobotoLight, sans-serif;
+                margin-bottom: 20px;
+                
+            }
+        }
     }
 }
 
