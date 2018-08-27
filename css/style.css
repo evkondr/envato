@@ -98,7 +98,7 @@ body {
   display: block;
 }
 
-.section {
+.main-section {
   margin-top: -95px;
   background: #fff;
   width: 100%;
@@ -108,7 +108,7 @@ body {
   -o-transform: skewY(-3deg);
   transform: skewY(-3deg);
 }
-.section .container {
+.main-section .container {
   -webkit-transform: skewY(3deg);
   -moz-transform: skewY(3deg);
   -ms-transform: skewY(3deg);
@@ -116,35 +116,82 @@ body {
   transform: skewY(3deg);
   padding-top: 70px;
 }
-.section h3 {
+.main-section .row {
+  margin-bottom: 130px;
+}
+.main-section h3 {
   font: 50px RobotoBlack, sans-serif;
   color: #242424;
 }
-.section p, .section h3 {
+.main-section p, .main-section h3 {
   margin-bottom: 20px;
 }
-.section .sigup-block {
+.main-section .signup-block {
   width: 100%;
   position: relative;
   text-align: center;
 }
-.section .sigup-block .singup-form {
-  margin-top: -270px;
+.main-section .signup-block .singup-form {
+  margin-top: -250px;
   width: 100%;
   padding: 30px;
   border: 1px solid #dbdada;
   background: #fff;
 }
-.section .sigup-block .singup-form h3 {
+.main-section .signup-block .singup-form h3 {
   font: 30px RobotoBold, sans-serif;
 }
-.section .sigup-block .singup-form input {
+.main-section .signup-block .singup-form input {
+  padding: 0 14px;
   width: 100%;
   height: 55px;
   border: 1px solid #bebebe;
   line-height: 55px;
   font: 19px RobotoLight, sans-serif;
   margin-bottom: 20px;
+  -webkit-border-radius: 7px 7px 7px 7px;
+  -moz-border-radius: 7px 7px 7px 7px;
+  -ms-border-radius: 7px 7px 7px 7px;
+  -o-border-radius: 7px 7px 7px 7px;
+  border-radius: 7px 7px 7px 7px;
+  opacity: 0.7;
+  outline: none;
+}
+.main-section .signup-block .singup-form input:focus {
+  border: 1px solid #90d23d;
+  opacity: 1;
+}
+.main-section .signup-block .singup-form button {
+  width: 100%;
+  padding: 15px;
+  font: 22px "RobotoBold", sans-serif;
+  background: #90d23d;
+  border: none;
+  color: #fff;
+  -webkit-border-radius: 7px 7px 7px 7px;
+  -moz-border-radius: 7px 7px 7px 7px;
+  -ms-border-radius: 7px 7px 7px 7px;
+  -o-border-radius: 7px 7px 7px 7px;
+  border-radius: 7px 7px 7px 7px;
+  margin-bottom: 20px;
+}
+.main-section .signup-block .singup-form p {
+  margin: 0px;
+  font-size: 15px;
+}
+.main-section .item-box.center {
+  padding: 0 50px;
+}
+.main-section .item-box {
+  text-align: center;
+}
+.main-section .item-box .icon {
+  width: 198px;
+  height: 211px;
+  margin: 0 auto 20px auto;
+}
+.main-section .item-box h3 {
+  font-size: 35px;
 }
 
 @media screen and (max-width: 992px) {
@@ -181,7 +228,7 @@ body {
     margin: 0;
   }
 
-  .section .sigup-block .singup-form {
+  .section-1 .sigup-block .singup-form {
     margin-top: 0;
   }
 }
