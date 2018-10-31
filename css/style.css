@@ -16,6 +16,11 @@ a:hover {
   text-decoration: none;
 }
 
+.row {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
 .container div {
   padding: 0;
 }
@@ -98,17 +103,19 @@ body {
   display: block;
 }
 
-.main-section {
+.inclined-section {
   margin-top: -95px;
   background: #fff;
   width: 100%;
+  padding-bottom: 100px;
+  color: #242424;
   -webkit-transform: skewY(-3deg);
   -moz-transform: skewY(-3deg);
   -ms-transform: skewY(-3deg);
   -o-transform: skewY(-3deg);
   transform: skewY(-3deg);
 }
-.main-section .container {
+.inclined-section .container {
   -webkit-transform: skewY(3deg);
   -moz-transform: skewY(3deg);
   -ms-transform: skewY(3deg);
@@ -116,32 +123,31 @@ body {
   transform: skewY(3deg);
   padding-top: 70px;
 }
-.main-section .row {
+.inclined-section .row {
   margin-bottom: 130px;
 }
-.main-section h3 {
+.inclined-section h3 {
   font: 50px RobotoBlack, sans-serif;
-  color: #242424;
 }
-.main-section p, .main-section h3 {
+.inclined-section p, .inclined-section h3 {
   margin-bottom: 20px;
 }
-.main-section .signup-block {
+.inclined-section .signup-block {
   width: 100%;
   position: relative;
   text-align: center;
 }
-.main-section .signup-block .signup-form {
+.inclined-section .signup-block .signup-form {
   margin-top: -250px;
   width: 100%;
   padding: 30px;
   border: 1px solid #dbdada;
   background: #fff;
 }
-.main-section .signup-block .signup-form h3 {
+.inclined-section .signup-block .signup-form h3 {
   font: 30px RobotoBold, sans-serif;
 }
-.main-section .signup-block .signup-form input {
+.inclined-section .signup-block .signup-form input {
   padding: 0 14px;
   width: 100%;
   height: 55px;
@@ -157,11 +163,11 @@ body {
   opacity: 0.7;
   outline: none;
 }
-.main-section .signup-block .signup-form input:focus {
+.inclined-section .signup-block .signup-form input:focus {
   border: 1px solid #90d23d;
   opacity: 1;
 }
-.main-section .signup-block .signup-form button {
+.inclined-section .signup-block .signup-form button {
   width: 100%;
   padding: 15px;
   font: 22px "RobotoBold", sans-serif;
@@ -175,25 +181,25 @@ body {
   border-radius: 7px 7px 7px 7px;
   margin-bottom: 20px;
 }
-.main-section .signup-block .signup-form p {
+.inclined-section .signup-block .signup-form p {
   margin: 0px;
   font-size: 15px;
 }
-.main-section .item-box.center {
+.inclined-section .item-box.center {
   padding: 0 50px;
 }
-.main-section .item-box {
+.inclined-section .item-box {
   text-align: center;
 }
-.main-section .item-box .icon {
+.inclined-section .item-box .icon {
   width: 198px;
   height: 211px;
   margin: 0 auto 20px auto;
 }
-.main-section .item-box h3 {
+.inclined-section .item-box h3 {
   font-size: 35px;
 }
-.main-section table {
+.inclined-section table {
   width: 100%;
   background: #4b4d4f;
   color: #fff;
@@ -205,29 +211,67 @@ body {
   -o-border-radius: 20px 20px 20px 20px;
   border-radius: 20px 20px 20px 20px;
 }
-.main-section table td {
+.inclined-section table td {
   padding: 30px 47px;
 }
-.main-section table thead {
+.inclined-section table thead {
   background: #a3cc40;
   font: 30px RobotoBlack;
 }
-.main-section table thead th {
+.inclined-section table thead th {
   padding: 27px 0px;
 }
-.main-section table thead th:nth-child(2) {
+.inclined-section table thead th:nth-child(2) {
   text-align: left;
   padding-left: 47px;
 }
-.main-section table tbody tr:nth-child(odd) {
+.inclined-section table tbody tr:nth-child(odd) {
   background: #373737;
 }
-.main-section table button {
+.inclined-section table button {
   width: 33px;
   height: 33px;
   background: url(../img/plus-icon.png) center center no-repeat;
   border: none;
   vertical-align: middle;
+}
+.inclined-section .table-sub {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.normal-section {
+  padding-bottom: 120px;
+}
+.normal-section .elite-logo {
+  width: 354px;
+  height: 347px;
+  margin: 0 auto;
+  margin-top: -100px;
+}
+.normal-section .description {
+  margin-top: 115px;
+  text-align: right;
+  color: #fff;
+}
+.normal-section .description h3 {
+  font: 50px RobotoBlack, sans-serif;
+  margin-bottom: 30px;
+}
+.normal-section .description p {
+  margin-bottom: 20px;
+}
+.normal-section .description button {
+  background: #90d23d;
+  padding: 20px 25px;
+  font: 18px RobotoRegular, sans-serif;
+  -webkit-border-radius: 20px 20px 20px 20px;
+  -moz-border-radius: 20px 20px 20px 20px;
+  -ms-border-radius: 20px 20px 20px 20px;
+  -o-border-radius: 20px 20px 20px 20px;
+  border-radius: 20px 20px 20px 20px;
+  border: none;
+  margin-top: 30px;
 }
 
 @media screen and (max-width: 992px) {
@@ -264,16 +308,16 @@ body {
     margin: 0;
   }
 
-  .main-section .signup-block .signup-form {
+  .inclined-section .signup-block .signup-form {
     margin-top: 0;
   }
-  .main-section table {
+  .inclined-section table {
     font-size: 15px;
   }
-  .main-section table thead {
+  .inclined-section table thead {
     font-size: 18px;
   }
-  .main-section table td {
+  .inclined-section table td {
     padding: 10px 5px;
   }
 }
