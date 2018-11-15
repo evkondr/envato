@@ -9,6 +9,7 @@
 
         <!-- Bootstrap -->
         <link rel="stylesheet" href="css/bootstrap.css" >
+        <link rel="stylesheet" href="css/hamburgers.css" >
         <link rel="stylesheet" href="css/fonts.css">
         <link rel="stylesheet" href="css/style.css">
 
@@ -20,7 +21,8 @@
         <![endif]-->
     </head>
     <body>
-       <nav class="nav">
+      <div class="main-container">
+          <nav class="nav">
            <div class="row">
                <div class="container">
                     <div class="col-md-4">
@@ -29,14 +31,13 @@
                         </div>
                     </div>
                     <div class="col-md-8">
-                       
+                       <div class="hamburger hamburger--slider" type="button">
+                          <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                          </span>
+                        </div>
                         <div class="menu">
-                           <div id="burg" class="burger hidden-md hidden-lg">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </div>
-                            <ul class="items visible-md visible-lg">
+                            <ul class="items">
                                 <li><a href="#">event details</a></li>
                                 <li><a href="#">speakers</a></li>
                                 <li><a href="#">sponsors</a></li>
@@ -212,6 +213,8 @@
                 </div>
             </div>
         </section>
+      </div>
+       
         
        
         

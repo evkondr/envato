@@ -23,6 +23,13 @@ $header_font: 50px RobotoBlack, sans-serif;
     -o-transform: $value;
     transform: $value;
 }
+@mixin transition($value){
+    -webkit-transition: $value;
+    -moz-transition: $value;
+    -ms-transition: $value;
+    -o-transition: $value;
+    transition: $value;
+}
 *{
     padding: 0;
     margin: 0; 
@@ -49,6 +56,7 @@ a{
     } 
 }
 body{
+    position: relative;
     font: $body_font;
     background-color: #4a454b;
 }
@@ -56,29 +64,24 @@ body{
     width: 100%;
 }
 .nav{
+    text-align: center;
     padding-top: 40px;
     .logo{
         width: 230px;
         height: 62px;
         margin: 0 auto;
     }
+    .hamburger{
+        margin: 20px 0;
+        display: none;
+        
+    }
     
     .menu{
+        color: white;
         float: right;
         overflow: hidden;
-        .burger{
-            cursor: pointer;
-            margin-top: 10px;
-            width: 30px;
-            float: right; 
-            span{
-                display: block;
-                width: 30px;
-                height: 5px;
-                background: #fff;
-                margin-bottom: 5px;
-            }
-        }
+
         .items{
             li{
                 float: left;
