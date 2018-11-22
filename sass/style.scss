@@ -50,7 +50,6 @@ a{
     margin-right: 0px;
 }
 .container{
-    
     div{
       padding: 0;  
     } 
@@ -62,6 +61,27 @@ body{
 }
 .nav,.header{
     width: 100%;
+}
+.icon{
+    display: inline-block;
+    background: url(../img/sprite.png)no-repeat;
+}
+.icon-sm{
+    width: 32px;
+    height: 32px;
+    margin-right: 5px;
+}
+.fb{
+    background-position: 0px 0px;
+}
+.tw{
+    background-position: -42px 0px;
+}
+.be{
+    background-position: -84px 0px;
+}
+.dr{
+    background-position: -122px 0px;
 }
 .nav{
     text-align: center;
@@ -247,10 +267,54 @@ body{
             text-align: center;
             margin-top: 40px;
         }
-    
+    .speaker{
+        background: $second_color;
+        width: 100%;
+        height: 296px;
+        margin-bottom: 30px;
+        @include border-radius(20px, 20px, 20px, 20px);
+        padding: 25px;
+        color: #fff;
+        h3{
+            font-size: 45px;
+            margin: 0;
+        }
+        hr{
+            margin-top: 5px;
+            margin-bottom: 10px;
+            width:  80px;
+            height: 5px;
+            background: #fff;
+        }
+        a{
+            font: 18px "RobotoMedium";
+        }
+        .social-block{
+            margin-top: 40px;
+        }
+    }
+    .speaker>a:hover{
+        border-bottom: 1px solid #fff;
+    }
+    .speaker.middle{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .speaker.image{
+        background: none;
+
+        .hand-img, img{
+            width: 100%;
+        }
+    }
+    .speaker.filled{
+        background: url(../img/filled.png) center center;
+        background-size: cover;
+    }
 }
 .normal-section{
-    padding-bottom: 120px;
+    padding-bottom: 190px;
     .elite-logo{
         
         width: 354px;
@@ -276,7 +340,8 @@ body{
             @include border-radius(20px, 20px, 20px, 20px);
             border: none;
             margin-top: 30px;
-        }       
+        }
+        
     }
 }
 @import "media";

@@ -24,8 +24,8 @@
     font-weight: normal; 
 }
 @font-face {
-    font-family: "RobotoLight"; 
-    src: url("../fonts/Roboto/Roboto-Light.ttf") format("truetype"); 
+    font-family: "RobotoMedium"; 
+    src: url("../fonts/Roboto/Roboto-Medium.ttf") format("truetype"); 
     font-style: normal; 
     font-weight: normal; 
 }
